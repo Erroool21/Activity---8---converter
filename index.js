@@ -78,7 +78,7 @@ function meters(){
     kilometers_input.value = km;
 }
 
-function meters(){
+function kilometers(){
     let cent_input = document.getElementById("cent");
     let inches_input = document.getElementById("inches");
     let feet_input = document.getElementById("feet");
