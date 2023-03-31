@@ -18,9 +18,10 @@
 .navbar a img {
     border-radius: 50%;
 }
-h6 {
+p {
     color: white !important;
     margin-right: 10px;
+    font-size: 20px;
 }
 h1 {
     color: white !important;
@@ -28,7 +29,7 @@ h1 {
 }
 .container {
     margin: 10vh;
-    width: 500px !important;
+    max-width: 500px !important;
     box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.68);
     height: 500px;
     color: white;
@@ -38,22 +39,59 @@ h1 {
     flex-direction: column;
     display: flex !important;
     border-radius: 20px;
+    padding-left: 60px !important;
+    padding-right: 30px !important;
 }
 
 
 .input-group {
     margin: 5px ;
-    width: 100% !important;
     justify-content: space-between;
     display: flex;
+    position: relative;
+}
+
+@media only screen and (max-width: 470px) {
+    .col-md-10 input {
+        max-width: 100%;
+    }
+    .container {
+        margin: 60px;
+        max-width: 300px !important;
+        height: 600px;
+        padding: 30px;
+    }
+
+    button {
+        max-width: 100px;
+    }
+    #errol {
+        display: none;
+    }
+    .navbar a img {
+        height: 30px;
+    }
+    
+}
+@media only screen and (min-width: 376px){
+    .container {
+        height: 600px;
+    }
+    #unit {
+        margin-bottom: 25px;
+    }
+    
 }
 
 .input-group input {
     box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.68);
 }
+
+
+
 .input-group input:hover{
    background-color: aqua;
-   width: 280px;
+   width: 270px;
    transition: 0.7s;
    border-radius: 10px;
 }
@@ -69,6 +107,7 @@ button {
     color: rgb(0, 0, 0);
     border: 0;
     cursor: pointer;
+    position: relative;
 }
 
 a:link {

@@ -13,46 +13,73 @@
 <body>
   <nav class="navbar navbar-light">
     <a class="navbar-brand" href="#">
-      <img src="logo.png" width="100%" height="30" alt="">
+      <img src="logo-remove.png" width="100%" height="40" alt="">
     </a>
-    <h6 class="navbar-brand">Activity 8 - Simple Length Converter</h6>
-    <h6 class="navbar-brand">erroL.GG</h6>
+    <p class="">Activity 8 - Simple Length Converter</p>
+    <p class="navbar-brand" id="errol">erroL.GG</p>
   </nav>
 
 
   
     <div class="container text-center">
-        <h1>Length Converter</h1> <br>
-        <div class="input-group mb-3">
-            <label for="Default">Centimeters</label>
-            <input type="text" id="cent" onkeyup="centimeters();">
+      <select name="change_unit" style="margin-bottom: 20px; margin-top: 20px" id="change_unit" onchange="change_unit()">
+        <option value="0" >Choose a unit</option>
+        <option value="length">Length</option>
+        <option value="mass">Mass</option>
+        <option value="time">Time</option>
+      </select>
+      
+        <h1 id="unit">Unit Converter</h1> <br>
+        <div class="row input-group mb-3">
+            <div class="col-md-2 col-12">
+              <label for="Default" id="unit1">Input</label>
+            </div>
+            <div class="col-md-10 col-12">
+              <input type="text" id="unit1_value">
+            </div>
           </div>
 
-          <div class="input-group mb-3">
-            <label for="Default">Inches</label>
-            <input type="text" id="inches" onkeyup="inches();">
+          <div class="row input-group mb-3">
+            <div class="col-md-2 col-12">
+            <label for="Default" id="unit2">Input</label>
+            </div>
+            <div class="col-md-10 col-12">
+            <input type="text" id="unit2_value" >
+            </div>
           </div>
           
-          <div class="input-group mb-3">
-            <label for="Default">Feet</label>
-            <input type="text" id="feet" onkeyup="feet();">
+          <div class="row input-group mb-3">
+            <div class="col-md-2 col-12">
+            <label for="Default" id="unit3">Input</label>
+            </div>
+            <div class="col-md-10 col-12">
+            <input type="text" id="unit3_value" >
+            </div>
           </div>
 
-          <div class="input-group mb-3">
-            <label for="Default">Meters</label>
-            <input type="text"  id="meters" onkeyup="meters();">
+          <div class="row input-group mb-3">
+            <div class="col-md-2 col-12">
+            <label for="Default" id="unit4">Input</label>
+            </div>
+            <div class="col-md-10 col-12">
+            <input type="text"  id="unit4_value" >
+            </div>
           </div>
 
-          <div class="input-group mb-3">
-            <label for="Default">Kilometers</label>
-            <input type="text"  id="kilometers" onkeyup="kilometers();">
+          <div class="row input-group mb-3">
+            <div class="col-md-2 col-12">
+            <label for="Default" id="unit5">Input</label>
+            </div>
+            <div class="col-md-10 col-12">
+            <input type="text"  id="unit5_value" >
+            </div>
           </div>
 
          
 
         <button onclick="reset();">Reset</button>
     </div>
-
+<hr>
 
     <footer>
       <div style="color: white; text-align: center; padding-bottom: 10px;">
