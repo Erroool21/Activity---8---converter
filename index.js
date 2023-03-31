@@ -125,7 +125,7 @@ function kilogram(){
     let gram = ( kilogram_input * 1000);
     gram_input.value = gram;
 
-    let pound = ( kilogram_input / 2.205);
+    let pound = ( kilogram_input * 2.205);
     pound_input.value = pound;
     
     let ounce = ( kilogram_input * 35.274);
