@@ -25,13 +25,13 @@ function change_unit(){
         input5.addEventListener('keyup', tonne);
 
     }else if (change_unit == "time"){
-        change_unit_time();}
+        change_unit_time();
         input1.addEventListener('keyup', seconds);
         input2.addEventListener('keyup', min);
         input3.addEventListener('keyup', hour);
         input4.addEventListener('keyup', days);
         input5.addEventListener('keyup', week);
-
+    }
 
 function change_unit_mass(){
     let unit_title = document.getElementById("unit");
